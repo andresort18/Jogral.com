@@ -1,7 +1,7 @@
 
 /*Navbar*/
 .navbar{
-    padding: 1.5rem;
+    padding: 1.2rem;
     background-color: #0979b0;
 }
 
@@ -18,13 +18,31 @@
     transform: scale(1.1);
 }
 
+#logoEncabezado{
+    width: 160px;
+    height: 60px;
+}
+
+
+/*Seccion Hero*/
+
 .titulos h2{
     font-size: 40px;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", 
+    "Palatino LT STD", Georgia, serif; 
+    font-style: normal; font-variant: normal;
 }
 
 .titulos strong{
-    font-size: 55px;
+    font-size: 50px;
+    font-family: "Book Antiqua", Palatino, "Palatino Linotype", 
+    "Palatino LT STD", Georgia, serif; 
+    font-style: normal; font-variant: normal;
 }
+
+
+
+
 
 
 /*seccion luxus*/
@@ -102,11 +120,13 @@
 }
 
 #contenedorDoloresyProductosBayer{
-    background: linear-gradient(70deg, #0080ff, #0066cc,#0080ff);
+    background: linear-gradient(70deg, #004c99,#004c99);
 }
 
 #cardsBayer{
     border-radius: 5px;
+    width: 14rem;
+    height: auto;
 }
 
 
@@ -115,9 +135,13 @@
     color: black;
 }
 
+.imagenAlka{
+    width: 300px;
+}
 
 
-/*responsive*/
+
+/*responsive para telefonos*/
 @media  screen and (max-width: 767px) {
     .navbar-brand{
         display: none;
@@ -147,5 +171,29 @@
         justify-content: center;
         margin: 0;
         padding: 0;
+    }
+
+    #cartasLuxus{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Agrega espacio entre cartas */
+    }
+
+
+    #cajaProductos {
+        justify-content: center; /* Centra las cartas */
+    }
+    
+    #cartaBayer{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Agrega espacio entre cartas */
+    }
+}
+
+/*responsive para pantallas hd*/
+@media  screen and (max-width: 1367px){
+    #cardsBayer{
+        width: 13rem;
     }
 }

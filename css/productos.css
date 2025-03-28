@@ -1,5 +1,17 @@
 
 /*Navbar*/
+header{
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Cuando la clase .visible se agrega, el header aparece */
+header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .navbar{
     padding: 1.2rem;
     background: linear-gradient(70deg, #3399ff,#0080ff,#0066cc,#004c99);
@@ -28,7 +40,21 @@
 }
 
 
-/*Seccion Hero*/
+/*Seccion Heroe*/
+
+/* Animación en los logos de marcas */
+.marcas {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Cuando los logos sean visibles */
+.marcas.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 #seccionHeroe{
     padding-top: 60px;
@@ -164,7 +190,11 @@
 }
 
 #contenedorDoloresyProductosBayer{
-    background: linear-gradient(70deg, #3b28cc,#3b28cc);
+    background: linear-gradient(70deg, rgba(59, 40, 204, 0.8), rgba(59, 40, 204, 0.8));
+}
+
+#contenedorProductosBayer{
+    background: linear-gradient(360deg, rgba(51, 153, 255, 0.8), rgba(0, 128, 255, 0.8), rgba(0, 102, 204, 0.8));
 }
 
 #cardsBayer{
@@ -398,7 +428,7 @@ footer{
 /*responsive para telefonos*/
 @media  screen and (max-width: 767px) {
     .navbar-brand{
-        display: none;
+        
     }
 
     #seccionHeroe{

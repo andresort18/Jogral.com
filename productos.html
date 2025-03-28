@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Productos JOGRAL</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="Imagenes/icononegocios.png" type="image/png" />
     <link rel="stylesheet" href="css/productos.css">
+     <!--boostrap-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+     <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Navbar-->
@@ -20,19 +33,19 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand text-light" href="#" >
+            <a class="navbar-brand text-light" href="index.html" >
               <img src="Imagenes/logosvg.svg" alt="Logo" class="d-inline-block align-text-center" id="logoEncabezado">
               
             </a>
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center" id="navlinks">
               <li class="nav-item me-3">
-                <a class="nav-link active text-light" aria-current="page" href="index.html">Acerca de nosotros</a>
+                <a class="nav-link  text-light" aria-current="page" href="index.html">NOSOTROS</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link text-light" href="Productos.html">Productos</a>
+                <a class="nav-link active text-light" href="Productos.html">PRODUCTOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="Contacto.html">Contacto</a>
+                <a class="nav-link text-light" href="Contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -42,13 +55,14 @@
  
     <!--seccion heroe -->
     <section class="firstSection">
-      <div class="container-fluid bg-light  py-5 h-50">
+      <div class="container-fluid bg-light" id="seccionHeroe">
         <div class="row">
           <div class="titulosEmpresa col-sm">
             <div class="titulos">
-              <h2>Nuestros</h2>
-              <h2>Productos en:</h2>
-              <strong>JOGRAL FARMACÉUTICA</strong>
+              <h2>Encuentra</h2>
+              <h2>Tus productos en:</h2>
+              <h1>¡JOGRAL FARMACÉUTICA!<img class="iconoNegocios" src="Imagenes/icononegociossvg.svg" alt=""></h1>
+              
             </div>
               <div class="lineaDivisora">
                 <div class="color1"></div>
@@ -71,7 +85,7 @@
     
    
      <!--contenedor de marcas-->
-     <div class="container-fluid bg-light  py-4 text-center">
+     <div class="container-fluid  py-4 text-center" id="seccionMarcas">
         <div class="row">
           <div class="col-sm-6 col-md-4 col-lg-2"><a href="https://www.vitaflenaco.com/"><img class="marcas" width="170" src="Imagenes/Marcas/Vitaflenaco.png" alt="logo_Vitaflenaco"></a></div>
           <div class="col-sm-6 col-md-4 col-lg-2"><a href="https://salandrewscac.com/es/productos/"><img class="marcas" width="200" src="Imagenes/Marcas/logo Andrews-01.png" alt="logo_de_sal_andrews"></a></div>
@@ -95,8 +109,8 @@
         </div>
       <section>
         <div class="container-fluid text-center justify-content-center pt-3" id="luxus">
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, enim. Ut, 
+          <h2>¡Luxus Nuestra Marca!</h2>
+          <p class="infoLuxus">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, enim. Ut, 
           eligendi quis animi alias illum cum exercitationem iusto eius consequuntur sequi odit. Est, ab. 
           Tenetur necessitatibus quasi inventore illo?</p>
         </div>
@@ -126,8 +140,8 @@
         <div class="color5"></div>
       </div>
     <!--contenedor de bayer-->
-    <section>
-      <div class="container text-center py-4 mt-4 mb-1" id="infoBayer"> 
+    <section class="areaBayer">
+      <div class="container text-center py-4  mb-1" id="infoBayer"> 
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, enim. Ut, 
           eligendi quis animi alias illum cum exercitationem iusto eius consequuntur sequi odit. Est, ab. 
@@ -162,6 +176,8 @@
       <!--cartas de productos-->
       <div class="container-fluid text-center py-4" id="contenedorProductosBayer">
         <div class="row" id="cajaProductos">
+
+          <!--carta alka normal-->
           <div class="col-sm-6 col-lg-2" id="cartaBayer">
             <div class="card text-center"id="cardsBayer">
               <img src="Imagenes/Area bayer/alka.jpg" class="card-img-top" alt="...">
@@ -231,26 +247,150 @@
               </div>
             </div>
           </div>
+
+          <!--carta Tabcin Gripe y tos-->
           <div class="col-sm-6 col-lg-2" id="cartaBayer">
             <div class="card text-center"  id="cardsBayer">
               <img src="Imagenes/Area bayer/tabcinGripeyTos.avif" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Tabcin® Gripe y Tos</h5>
                 <p class="card-text">Alivia eficazmente la fiebre, dolor de cabeza y cuerpo, congestión nasal, tos y el dolor de garganta.</p>
-                <a href="#" class="btn btn-primary">Conoce mas</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalTabGripeTos">
+                  Conoce Mas
+                </button>
+                <!-- Modal de Tabcin Gripe y tos-->
+                <div class="modal fade" id="exampleModalTabGripeTos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Tabcin® Gripe y Tos</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="conteniner-fluid text-center">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Modal de Tabcin gripe y tos Carrusel-->
+                              <div id="carouselExampleIndicatorsTabcinGripeTos" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicatorsTabcinGripeTos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicatorsTabcinGripeTos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicatorsTabcinGripeTos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="Imagenes/Banner2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="Imagenes/Area bayer/boost.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="Imagenes/Area bayer/tabcinGripeyTos.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsTabcinGripeTos" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsTabcinGripeTos" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <h2>Tabcin® Gripe y Tos</h2>
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                In placeat neque voluptatum deserunt quo optio, et voluptatem odit rem 
+                                ducimus hic unde quibusdam assumenda nemo eum obcaecati ad eius ipsa.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veniam harum, eveniet quisquam quos consectetur, 
+                                tenetur illo in alias eligendi odio? Ea, quisquam delectus expedita deserunt quis incidunt voluptatem maiores?</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <!--carta Tabcin Extra fuerte-->
           <div class="col-sm-6 col-lg-2" id="cartaBayer">
             <div class="card text-center" id="cardsBayer">
               <img src="Imagenes/Area bayer/extraFuerte.avif" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Tabcin® Extra fuerte</h5>
                 <p class="card-text">Alivia los síntomas de la gripe y el resfriado con la rapidez y frescura de una tableta efervescente.</p>
-                <a href="#" class="btn btn-primary" id="botonCard">Conoce mas</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalTabExtraFuerte">
+                  Conoce Mas
+                </button>
+                <!-- Modal de tabcin extra fuerte-->
+                <div class="modal fade" id="exampleModalTabExtraFuerte" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Tabcin® Extra fuerte</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="conteniner-fluid text-center">
+                          <div class="row">
+                            <div class="col">
+                              <!-- Modal de Tabcin Extra Fuerte y tos Carrusel-->
+                              <div id="carouselExampleIndicatorsTabextraFuerte" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicatorsTabextraFuerte" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicatorsTabextraFuerte" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicatorsTabextraFuerte" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="Imagenes/Banner2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="Imagenes/Area bayer/boost.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="Imagenes/Area bayer/tabcinGripeyTos.avif" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsTabextraFuerte" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsTabextraFuerte" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <h2>Tabcin® Extra fuerte</h2>
+                              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                In placeat neque voluptatum deserunt quo optio, et voluptatem odit rem 
+                                ducimus hic unde quibusdam assumenda nemo eum obcaecati ad eius ipsa.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum veniam harum, eveniet quisquam quos consectetur, 
+                                tenetur illo in alias eligendi odio? Ea, quisquam delectus expedita deserunt quis incidunt voluptatem maiores?</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <!--carta Tabcin Niños-->
           <div class="col-sm-6 col-lg-2" id="cartaBayer" >
             <div class="card text-center" id="cardsBayer">
               <img src="Imagenes/Area bayer/niñosMasticables.avif" class="card-img-top" alt="...">
@@ -261,6 +401,8 @@
               </div>
             </div>
           </div>
+
+          <!--carta alka gastric-->
           <div class="col-sm-6 col-lg-2" id="cartaBayer" >
             <div class="card text-center"  id="cardsBayer">
               <img src="Imagenes/Area bayer/gastric-alka.png" class="card-img-top" alt="...">
@@ -271,6 +413,8 @@
               </div>
             </div>
           </div>
+
+          <!--carta alka Boost-->
           <div class="col-sm-6 col-lg-2" id="cartaBayer">
             <div class="card text-center"  id="cardsBayer">
               <img src="Imagenes/Area bayer/boost.webp" class="card-img-top" alt="...">
@@ -281,55 +425,147 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>  
     </section>
 
-
-    <!--contenedor de info-->
-    <section>
-      <div class="container mt-5">
-        <h2 class="text-center">ACERCA DE</h2>
+    <!--contenedor catalago jogral-->
+    <section class="catalogo">  
+      <div class="container text-center">
+        <div class="container catalogo-info d-flex justify-content-center align-items-center">
           <div class="row">
-            <div class="col text-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corporis ratione repellat expedita labore provident porro fuga ut. 
-                Accusantium eligendi praesentium vel qui perspiciatis esse aliquam laboriosam, dolore nesciunt tempore!</p>
-              <!--lista no ordenada-->
-              <ol class="list-group list-group-numbered mt-2">
-                <li class="list-group-item">Calidad</li>
-                <li class="list-group-item">Buen Precio</li>
-                <li class="list-group-item">Variedad</li>
-              </ol>
-  
-            </div>
-            <div class="col text-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam quae pariatur excepturi minima ad ipsum officiis dolore, 
-                veritatis harum incidunt, cumque nam aliquid, quos porro? Mollitia, quia iste! Perferendis?</p>
-                <button type="button" class="btn btn-primary btn-lg mt-4">Large button</button>
-  
-            </div>
-          </div>
-       </div>
-    </section>
-     
-     <!--contenedor de Video e Informacion de promos-->
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fUw3LMPx9TM?si=eDyALFsc5zk5PUaS" title="YouTube video player" 
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="col">
-            <h2>Nuestras Promociones</h2>
+              <div class="col-12">
+                <h2>Nuestro Catalogo de productos</h2>
+              </div>
+              <div class="col-12">
+                <a class="areaCatalago" href="Imagenes/areaCatalago/CATALOGO_JOGRAL_2025_28 pag_compressed (1).pdf" download="catalogo-Jogral">
+                  <img src="Imagenes/areaCatalago/Portada Catalago.jpg" alt="" class="imagenCatalago img-fluid">
+                </a>
+              </div>
+              <div class="col-12">
+                <a href="Imagenes/areaCatalago/CATALOGO_JOGRAL_2025_28 pag_compressed (1).pdf " download="catalogo-Jogral">
+                  <button type="button">
+                    Descargar 
+                    <i class="bi bi-arrow-down-circle"></i>
+                  </button>
+                </a>
+              </div>
           </div>
         </div>
       </div>
     </section>
+   
+    <!--contenedor de Video e Informacion de promos-->
+    <section class="info bg-light text-center">
+      <h2>Promociones</h2>
+      <h3>Estas son algunas de nuestras promociones</h3>
+      <div class="container">
+        <div class="container carrusel d-flex align-items-center justify-content-center">
+            <div class="row">
+              <div class="col-12">
+                <div id="promocionesCarrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="info-Imagen d-block w-100" src="Imagenes/promociones/Umedica.svg" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="info-Imagen d-block w-100" src="Imagenes/promociones/vitaflenaco.svg"alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="info-Imagen d-block w-100" src="Imagenes/promociones/Astroton.svg"  alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#promocionesCarrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#promocionesCarrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div> 
+              </div>
+            </div>
+        </div>
+      </div>
+      <!--<div class="container">
+        <div class="container promos  text-center d-flex justify-content-evenly ">
+            <div class="row mb-5">
+              <div class="col-12 col-md-6 video-promo">
+                <iframe class="videoPromos" src="https://www.youtube.com/embed/fUw3LMPx9TM?si=eDyALFsc5zk5PUaS" title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="col-12 col-md-6 catalago-productos">
+                  <h2>¡Nuestras promociones del mes!</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Nulla earum debitis quae est repellat voluptas minima optio incidunt vel eveniet modi 
+                    officiis aperiam similique explicabo excepturi iure, dolorum, eligendi dignissimos.</p>
+              </div>
+            </div>
+         </div>
+      </div>-->
+    </section>
+     
     
+    <!--contacto-->
+    <section class="contacto seccion-oscura bg-dark">
+      <div class="container">
+          <div class="container text-center rectangulo d-flex justify-content-evenly">
+              <div class="row">
+                  <div class="col-12 col-md-4 seccion-titulo">
+                      <h2>¡Contactanos!</h2>
+                  </div>
+                  <div class="col-12 col-md-4 descripcion">
+                    <p>Contactanos para surtir tu negocio con los mejores productos y los mejores precios.</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="tel:+50266450707">
+                      <button type="button">
+                        <i class="bi bi-telephone-forward"></i>
+                        +502 6645-0707 
+                      </button>
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+     <!--pie de pagina-->
+    <footer class="seccion-oscura bg-dark d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="Imagenes/logosvg.svg" alt="">
+      <p class="footer-texto text-center">Los mejores productos y precios siempre en Jogral<br>Ven y forma parte de nuestra gran familia.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://x.com/JogralGuatemala" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://www.facebook.com/JogralGT" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:ventas@jogral.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope-at-fill"></i>
+        </a>
+        <a href="https://wa.me/+50254219692?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="tel:+50266450707" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-telephone-forward"></i>
+        </a>
+
+      </div>
+      <div class="derechosDeAutor">
+        Copyright by JOGRAL - 2025 &#169;  
+      </div>
+    </footer>
+
     
+    <script src="Js/productos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
 </body>
 </html>

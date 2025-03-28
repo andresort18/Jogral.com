@@ -2,7 +2,7 @@
 /*Navbar*/
 .navbar{
     padding: 1.2rem;
-    background-color: #0979b0;
+    background: linear-gradient(70deg, #3399ff,#0080ff,#0066cc,#004c99);
 }
 
 .navbar-collapse{
@@ -11,38 +11,64 @@
 }
 
 .nav-link{
-    font-size: 22px;
+    font-size: 25px;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
 }
 
-.nav-link:hover{
-    transform: scale(1.1);
+
+#linksNav{
+    color: white;
 }
 
 #logoEncabezado{
-    width: 160px;
-    height: 60px;
+    width: 170px;
+    height: 65px;
 }
 
 
 /*Seccion Hero*/
 
+#seccionHeroe{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+
 .titulos h2{
     font-size: 40px;
-    font-family: "Book Antiqua", Palatino, "Palatino Linotype", 
-    "Palatino LT STD", Georgia, serif; 
-    font-style: normal; font-variant: normal;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
 }
 
-.titulos strong{
+.titulos h1{
     font-size: 50px;
-    font-family: "Book Antiqua", Palatino, "Palatino Linotype", 
-    "Palatino LT STD", Georgia, serif; 
-    font-style: normal; font-variant: normal;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+    
+}
+
+.iconoNegocios{
+    width: 53px;
+    height: 55px;
+    margin-bottom: 5px;
+}
+
+.nosotrosDesc{
+    font-family: "Quicksand", sans-serif;
 }
 
 
-
-
+/*seccion marcas*/
+#seccionMarcas{
+   gap: 5px;
+   background: linear-gradient(70deg, #e6f4fb,#add7f6,#e6f4fb,#add7f6,#e6f4fb);
+   /*background-color: #add7f6;*/
+   border-top: 3px solid black;
+}
 
 
 /*seccion luxus*/
@@ -54,6 +80,11 @@
     background-size: cover;
     height: 600px;
     color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+#luxus h2{
+    font-family: "Rubik Dirt", cursive;
 }
 
 #video_background{
@@ -108,6 +139,18 @@
 
 
 /*Area Bayer*/
+.areaBayer{
+    background-color: whitesmoke;
+}
+
+#infoBayer h2{
+    font-family: "Rubik Dirt", cursive;
+}
+
+#infoBayer p{
+    font-family: "Quicksand", sans-serif;
+}
+
 .hoverImage{
     border: 3px solid white;
     border-radius: 5px;
@@ -116,11 +159,12 @@
 
 .subDolores{
     color: whitesmoke;
+    font-family: "Rubik Dirt", cursive;
     margin-top: 5px;
 }
 
 #contenedorDoloresyProductosBayer{
-    background: linear-gradient(70deg, #004c99,#004c99);
+    background: linear-gradient(70deg, #3b28cc,#3b28cc);
 }
 
 #cardsBayer{
@@ -139,6 +183,216 @@
     width: 300px;
 }
 
+/*Area Catalago*/
+.catalogo{
+    background: linear-gradient(70deg, #e6f4fb,#add7f6,#e6f4fb,#add7f6,#e6f4fb); 
+}
+
+.imagenCatalago{
+    width: 300px;
+    border: 3px solid white ;
+    border-radius: 5px;
+
+}
+
+.imagenCatalago:hover{
+    transform: scale(1.02);
+}
+
+.catalogo .container{
+    max-width: 1100px;
+    min-height: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.catalogo .catalogo-info{
+    background: linear-gradient(180deg, #3399ff,#0080ff,#0066cc);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+    border: solid 2px black;
+    max-width: 1000px;
+}
+
+.catalogo .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.catalogo h2{
+    color: white;
+    font-family: "Rubik Dirt", cursive;
+}
+
+.catalogo button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.2rem;
+}
+
+.catalogo button:hover{
+    background-color: white;
+    color: black;
+}
+
+.catalogo button i{
+    color: white;
+    font-size:  1.5rem;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.catalogo button:hover i{
+    color:black ;
+}
+/*Area carrousel promos*/
+.info{
+    padding: 40px 40px 100px 40px;
+}
+
+.info h2{
+    font-size: 40px;
+    font-family: "Rubik Dirt", cursive;
+    margin-bottom: 5px;
+}
+
+.info h3{
+    font-size: 30px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.info .carousel{
+    max-width: 750px;
+    box-shadow: 0px 3px 6px 3px black;
+    margin-top: 10px;
+}
+
+.carousel-item{
+  height: 420px;  
+}
+
+
+/*Area Contacto*/
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background: linear-gradient(360deg, #3399ff,#0080ff,#0066cc);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white; 
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto h2{
+    color: white;
+    font-size: 25px;
+    font-family: "Rubik Dirt", cursive;
+}
+
+.contacto .descripcion{
+    color:  white;
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button i{
+    color: white;
+    font-size:  1.3rem;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contacto button:hover i{
+    color:black ;
+}
+
+/*Pie de pagina (footer)*/
+footer{
+    min-height: 300px;
+}
+
+.footer-logo{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: solid 2px white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13,110 ,253 );
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derechosDeAutor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
 
 
 /*responsive para telefonos*/
@@ -147,12 +401,18 @@
         display: none;
     }
 
+    #seccionHeroe{
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
     .titulos h2{
+        margin-top: 0;
         font-size: 30px;
     }
 
     .titulos strong{
-        font-size: 45px;
+        font-size: 38px;
     }
 
     .titulosEmpresa{
@@ -173,6 +433,7 @@
         padding: 0;
     }
 
+
     #cartasLuxus{
         display: flex;
         justify-content: center;
@@ -188,6 +449,66 @@
         display: flex;
         justify-content: center;
         margin-bottom: 20px; /* Agrega espacio entre cartas */
+    }
+
+    .info h2{
+        font-size: 30px;
+    }
+
+    .info h3{
+        font-size: 20px;
+    }
+
+    .carousel-item{
+        width: 300px;
+        height: auto;
+    }
+
+    .info-imagen{
+        height: 120px;
+        width: 230px;
+    }
+
+    .info .carousel{
+        width: 300px;
+    }
+}
+
+/*Cosas que solo suceden cuando se usan tablets y pantallas grandes*/
+@media  screen and (min-width: 767px) {
+    /*Decoracion a los links de la nav*/
+    #navlinks li {
+        position: relative; 
+    }
+    
+    #navlinks li:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        display: block;
+        transition: all 0.3s ease;
+        bottom: 25%;
+    }
+    
+    #navlinks li:hover::after{
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .iconoNegocios{
+        margin-left: 10px;
+    }
+
+    .infoLuxus{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .videoPromos{
+        width: 500px;
+        height: 300px;
     }
 }
 

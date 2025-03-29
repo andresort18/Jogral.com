@@ -41,7 +41,6 @@ header.visible {
 
 
 /*Seccion Heroe*/
-
 /* Animación en los logos de marcas */
 .marcas {
     opacity: 0;
@@ -427,10 +426,7 @@ footer{
 
 /*responsive para telefonos*/
 @media  screen and (max-width: 767px) {
-    .navbar-brand{
-        
-    }
-
+ 
     #seccionHeroe{
         padding-top: 10px;
         padding-bottom: 5px;

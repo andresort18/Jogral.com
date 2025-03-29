@@ -1,0 +1,218 @@
+/*navbar*/
+.navbar{
+    padding: 1.2rem;
+    background: linear-gradient(70deg, #3399ff,#0080ff,#0066cc,#004c99);
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link{
+    font-size: 25px;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+
+#linksNav{
+    color: white;
+}
+
+#logoEncabezado{
+    width: 170px;
+    height: 65px;
+}
+
+/*Seccion banner*/
+.info{
+    background-image: url(../Imagenes/Contacto/banner.png);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info .info-banner{
+    padding: 50px;
+    width: 900px;
+    height: 400px;
+    
+}
+
+.info .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info h1{
+  font-family: "Dosis", sans-serif;
+  font-size: 70px;
+  font-weight: 300;
+}
+
+.info h2{
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+}
+
+
+.lineaDivisora{
+    display: flex;
+    width: 100%;
+    height: 10px;
+}
+
+.lineaDivisora div{
+    flex: 1; 
+    height: 100%;
+}
+
+
+.lineaDivisora .color1 { background: #003366; } 
+.lineaDivisora .color2 { background: #004c99; } 
+.lineaDivisora .color3 { background: #0066cc; } 
+.lineaDivisora .color4 { background: #0080ff; } 
+.lineaDivisora .color5 { background: #3399ff; } 
+
+
+
+/*Area Contacto*/
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background: linear-gradient(360deg, #3399ff,#0080ff,#0066cc);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white; 
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto h2{
+    color: white;
+    font-size: 25px;
+    font-family: "Rubik Dirt", cursive;
+}
+
+.contacto .descripcion{
+    color:  white;
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button i{
+    color: white;
+    font-size:  1.3rem;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contacto button:hover i{
+    color:black ;
+}
+/*Pie de pagina (footer)*/
+footer{
+    min-height: 300px;
+}
+
+.footer-logo{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: solid 2px white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13,110 ,253 );
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derechosDeAutor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+
+@media  screen and (min-width: 767px) {
+    /*Decoracion a los links de la nav*/
+    #navlinks li {
+        position: relative; 
+    }
+    
+    #navlinks li:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        display: block;
+        transition: all 0.3s ease;
+        bottom: 25%;
+    }
+    
+    #navlinks li:hover::after{
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+    }
+}

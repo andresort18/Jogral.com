@@ -3,123 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogral</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+    <title>JOGRAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="Imagenes/icononegocios.png" type="image/png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+     <!--boostrap-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+     <!--iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!--fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" 
-         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Dirt&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="nav">
-            <div>
-                <h1 ><img  class="logoNav" src="Imagenes/letras2.png" alt="logoJogral"></h1>
-            </div>
-            <div class="listaNav">
-                <ul>
-                    <li><a href="index.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                </ul>
-            </div>
-            
-        </nav>
-    </header>
-    <main>
-        <section class="principal">
-            <div class="subPrincipal">
-                <h2 class="s1">¡BIENVENIDOS!</h2>
-                <h2 class="s2">FARMACÉUTICA</h2>
-                <h2 class="s3">J  O  G  R  A  L</h2>
-            </div>
-        </section>
-        <section class="Valores">
-            <img class="imgValores" src="Imagenes/valores.jpeg" alt="">
-            <div class="nuestrosValores">
-                <h2 class="s4">Nuestros Valores</h2>
-                <h3 class="s5">Honestidad</h3>
-                    <p>
-                        En todas las interacciones entre miembros de la empresa, con nuestros clientes y proveedores.
-                        Se promueve la verdad como un elemento fundamental para generar confianza y credibilidad en 
-                        Jogral Farmaceutica. 
-                    </p>
-                <h3 class="s5">Calidad</h3>
-                     <p>
-                        En los productos y servicios ofrecidos, de forma que siempre sean de excelencia.
-                     </p>
-                <h3 class="s5">Trabajo en Equipo</h3>
-                    <p>
-                       Ser un equipo multidisciplinario, dinámico e integrado, enfocado en el servicio de excelencia a nuestros
-                       clientes y proveedores, en un ambiente postivo y de una cultura de valores. 
-                    </p>
-            </div>
-        </section>
-        <div class="lineaDivisora">
-            <div class="color1"></div>
-            <div class="color2"></div>
-            <div class="color3"></div>
-            <div class="color4"></div>
-            <div class="color5"></div>
+  
+<!--navbar-->
+<header>
+    <nav class="navbar navbar-expand-md  navbar-light">
+      <div class="container-fluid">
+  
+        <a class="navbar-brand text-light" href="index.html" >
+          <img src="Imagenes/logosvg.svg" alt="Logo" class="d-inline-block align-text-center" id="logoEncabezado">
+        </a>
+  
+        <button class="navbar-toggler order-last" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <ul class="navbar-nav d-flex justify-content-center align-items-center ms-auto" id="navlinks">
+            <li class="nav-item me-3">
+              <a class="nav-link  text-light" aria-current="page" href="index.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link active text-light" href="Productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="Contacto.html">CONTACTO</a>
+            </li>
+          </ul>
         </div>
-        <section class="VandM">
-            <div class="mision">
-                <h2 class="s4">Misión</h2>
-                <p>Comercializar y distribuir productos farmacéuticos y a fines, comprometidos con lograr la satisfaccion total
-                    de nuestros clientes y con alcanzar la excelencia en cada acción que realicemos, con dinamismo y responsabilidad,
-                    haciendo que sea una experiencia única y especial, a través de cadenas de valor.
-                </p>
-                    <div class="CajalogoInferior">
-                        <img class="letrasUnder" src="Imagenes/LOGOTIPO JOGRAL.png" alt="">
-                    </div>
-                    
-            </div>
-            <div class="vision">
-                <h2 class="s4">Visión</h2>
-                <p>
-                    Ser la empresa líder en distribución de productos farmacéuticos y afines a nivel nacional y ser reconocidos
-                    como tales por parte de nuestros clientes y proveedores, cimentando fuertes lazos comerciales basados en sólidos
-                    principios morales, éticos y financieros.
-                </p>
-                    <div class="CajalogoInferior">
-                        <img class="letrasUnder" src="Imagenes/LOGOTIPO JOGRAL.png" alt="">
-                    </div>
-            </div>
-        </section>
-        
-    </main>
+      </div>
+    </nav>
+</header>
 
-    <footer>
-        <div class="lineaDivisora">
-            <div class="color1"></div>
-            <div class="color2"></div>
-            <div class="color3"></div>
-            <div class="color4"></div>
-            <div class="color5"></div>
+<!--hero--> 
+<section class="seccionheroe">
+  <div class="hero-section d-flex align-items-center">
+    <div class="overlay"></div> <!-- Capa de oscurecimiento -->
+    <div class="content text-white text-start">
+        <h1 class="tituloheroe">JOGRAL FARMACÉUTICA<img class="iconoNegocios" src="Imagenes/gifnegocios.gif" alt=""></h1>
+        <p class="textoheroe">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit sapiente placeat sunt temporibus quas cumque debitis, 
+          cum labore? Aliquam debitis ipsa reprehenderit atque distinctio, velit earum repudiandae vero beatae magni.</p>
+        <a href="Productos.html#catalogo" class="btn btn-outline-light btn-lg">Verifica nuestros productos</a>
+    </div>
+</div>
+</section>
+
+<!--reconocimientos-->
+<section class="reconocimientos">
+  <div class="contendor-conocimientos container-fluid">
+      <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <i class="bi bi-star-fill"></i>
+            <h2>Calidad</h2>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <i class="bi bi-coin"></i>
+            <h2>Precios Bajos</h2>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <i class="bi bi-house-heart-fill"></i>
+            <h2>Fiabilidad</h2>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!--Quienes somos-->
+<section class="quienesSomos">
+  <div class="container">
+    <div class="container-fluid cajaSomos">
+      <div class="row d-flex justify-content-center align-items-center g-5">
+        <div class="col-sm-12 col-lg-6">
+          <img class="quinesSomosImg img-fluid" src="Imagenes/quienesSomos.jpg" alt="quines somos imagen">
         </div>
-        <section class="cajaFooter">
-            <div class="cajaF1">
-                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i>Jogral Farmaceutica</a>
-                <a href="mailto:ventas@jogral.com"><i class="fas fa-envelope"></i> ventas@jogral.com</a>
-                <a href="https://maps.app.goo.gl/Evmg4ZQN7UiEm1Yq8" 
-                target="_blank"><i class="fas fa-map-marker-alt"></i>Km 16.5,5C.1-71 Z.6 Villa nueva,Guatemala</a>
-            </div>
-            <div class="cajaF2">
-               
-                <a href="tel:+50266450707"> <i class="fas fa-phone-alt"></i>+502 6645-0707</a>
-                <a href="https://wa.me/+50254219692?text=Hola,%20quiero%20más%20información" target="_blank">    
-                    <i class="fab fa-whatsapp"></i> Whatsapp
-                    <a href="https://maps.app.goo.gl/9Lyjcj5oZVnYEgEu5" target="_blank"><i class="fas fa-map-marker-alt"></i> 6A Avenida 4-20 zona 12 Ciudad de Guatemala</a>
-                </a>
-            </div>
-        </section>
-        <div class="pieFooter">
-            <p class="copyright">&copy Copyright by JOGRAL - 2025</p>
-        </div> 
-    </footer>
+        <div class="col-sm-12 col-lg-6">
+          <h2>Quienes somos</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur id ad dolorum nemo et iusto reprehenderit cumque saepe 
+            necessitatibus consequuntur corrupti <br>qui blanditiis, optio ullam nisi sed dolores pariatur earum?</p>
+          <h3>Tu salud es lo mas importante <br>para nosotros.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Vision-->
+<section class="vision">
+  <div class="container">
+    <div class="container-fluid cajavision">
+      <div class="row d-flex justify-content-center align-items-center g-lg-5">
+        <div class="col-md-12 col-lg-4">
+          <img class="imgVision img-fluid" src="Imagenes/visionimg.avif" alt="nuestra vision imagen">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <h2 class="tituloVision">Nuestra Vision</h2>
+          <p>Ser la empresa líder en distribución de productos farmacéuticos y afines a nivel nacional y ser reconocidos
+            como tales por parte de nuestros clientes y proveedores, cimentando fuertes lazos comerciales basados en sólidos
+            principios morales, éticos y financieros.</p>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <img class="imgVision2 img-fluid" src="Imagenes/visionimg2.jpg" alt="nuesta vision imagen 2">
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<!--Mision-->
+<section class="mision">
+  <div class="container">
+    <div class="container-fluid cajaMision">
+      <div class="row d-flex justify-content-center align-items-center g-lg-5">
+        <div class="col-sm-12 col-lg-6">
+          <h2 class="tituloMision">Nuestra Misión</h2>
+          <p>Comercializar y distribuir productos farmacéuticos y a fines, comprometidos con lograr la satisfaccion total
+            de nuestros clientes y con alcanzar la excelencia en cada acción que realicemos, con dinamismo y responsabilidad,
+            haciendo que sea una experiencia única y especial, a través de cadenas de valor.</p>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <img class="imgMision img-fluid" src="Imagenes/misionimg.jpg" alt="nuestra mision imagen">
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+<!--Valores-->
+<section class="valores">
+  <div class="container">
+    <div class="container-fluid cajaValores">
+      <h2 class="tituloValores mb-4">Nuestros Valores</h2>
+      <div class="row d-flex justify-content-center align-items-center mt-3">
+        <div class="col-sm-12 col-lg-6">
+          <img  class="imgValores img-fluid" src="Imagenes/honestidad.webp" alt="">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <h3>Honestidad</h3>
+          <p>En todas las interacciones entre miembros de la empresa, con nuestros clientes y proveedores.
+            Se promueve la verdad como un elemento fundamental para generar confianza y credibilidad en 
+            Jogral Farmaceutica. </p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center mt-3">
+        <div class="col-sm-12 col-lg-6">
+          <img class="imgValores img-fluid" src="Imagenes/calidad.jpg" alt="">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <h3>Calidad</h3>
+          <p>En los productos y servicios ofrecidos, de forma que siempre sean de excelencia.</p>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center mt-3 mb-5">
+        <div class="col-sm-12 col-lg-6">
+          <img class="imgValores img-fluid" src="Imagenes/trabajoEnEquipo.jpg" alt="">
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <h3>Trabajo en Equipo</h3>
+          <p>Ser un equipo multidisciplinario, dinámico e integrado, enfocado en el servicio de excelencia a nuestros
+            clientes y proveedores, en un ambiente postivo y de una cultura de valores. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!--contacto-->
+<section class="contacto seccion-oscura bg-dark">
+        <div class="container">
+          <div class="container text-center rectangulo d-flex justify-content-evenly">
+              <div class="row">
+                  <div class="col-12 col-md-4 seccion-titulo">
+                      <h2>¡Contactanos!</h2>
+                  </div>
+                  <div class="col-12 col-md-4 descripcion">
+                    <p>Contactanos para surtir tu negocio con los mejores productos y los mejores precios.</p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <a href="tel:+50266450707">
+                      <button type="button">
+                        <i class="bi bi-telephone-forward"></i>
+                        +502 6645-0707 
+                      </button>
+                    </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+</section>
+
+<!--pie de pagina-->
+<footer class="seccion-oscura bg-dark d-flex flex-column align-items-center justify-content-center">
+      <img class="footer-logo" src="Imagenes/logosvg.svg" alt="">
+      <p class="footer-texto text-center">Los mejores productos y precios siempre en Jogral<br>Ven y forma parte de nuestra gran familia.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://x.com/JogralGuatemala" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://www.facebook.com/JogralGT" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:ventas@jogral.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope-at-fill"></i>
+        </a>
+        <a href="https://wa.me/+50254219692?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="tel:+50266450707" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-telephone-forward"></i>
+        </a>
+  
+      </div>
+      <div class="derechosDeAutor">
+        Copyright by JOGRAL - 2025 &#169;  
+      </div>
+</footer>
+
+ <!--boton de whatssapp-->
+<a href="https://wa.me/+50254219692?text=Hola,%20quiero%20más%20información" class="btn-wsp" target="_blank">
+  <i class="icon-whatsapp bi bi-whatsapp"></i>
+</a>
 <script src="Js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ header.visible {
 }
 
 .navbar{
-    padding: 1.2rem;
+    padding: 0.5rem;
     background: linear-gradient(70deg, #3399ff,#0080ff,#0066cc,#004c99);
 }
 
@@ -91,7 +91,6 @@ header.visible {
 #seccionMarcas{
    gap: 5px;
    background: linear-gradient(70deg, #e6f4fb,#add7f6,#e6f4fb,#add7f6,#e6f4fb);
-   /*background-color: #add7f6;*/
    border-top: 3px solid black;
 }
 
@@ -422,6 +421,55 @@ footer{
     padding: 20px;
 }
 
+/*boton de whatsapp*/
+.btn-wsp{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 35px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    transition: all 0.3s ease;
+    animation: latido 8s infinite;
+}
+
+.btn-wsp:hover{
+   text-decoration: none;
+   color: #0df053;
+   background-color: #fff;
+}
+
+.btn-wsp i {
+    line-height: 1;
+    display: block;
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 /*responsive para telefonos*/
@@ -463,18 +511,18 @@ footer{
     #cartasLuxus{
         display: flex;
         justify-content: center;
-        margin-bottom: 20px; /* Agrega espacio entre cartas */
+        margin-bottom: 20px; 
     }
 
 
     #cajaProductos {
-        justify-content: center; /* Centra las cartas */
+        justify-content: center; 
     }
     
     #cartaBayer{
         display: flex;
         justify-content: center;
-        margin-bottom: 20px; /* Agrega espacio entre cartas */
+        margin-bottom: 20px; 
     }
 
     .info h2{
@@ -497,6 +545,16 @@ footer{
 
     .info .carousel{
         width: 300px;
+    }
+    .btn {
+        width: 100%; 
+    }
+    .btn-wsp {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        bottom: 20px;
+        right: 20px;
     }
 }
 
@@ -532,15 +590,109 @@ footer{
         margin-right: 150px;
     }
 
-    .videoPromos{
-        width: 500px;
-        height: 300px;
-    }
 }
 
 /*responsive para pantallas hd*/
 @media  screen and (max-width: 1367px){
     #cardsBayer{
         width: 13rem;
+        height: 450px;
+    }
+
+    .titulos h2{
+        font-size: 35px;
+    }
+
+    .titulos h1{
+        font-size: 45px;
+    }
+}
+
+/*responsive para tablets pequeñas*/
+@media (min-width: 768px) and (max-width: 815px){
+    #seccionHeroe{
+        text-align: center;
+        padding: 20px;
+    }
+
+    #herorow{
+        justify-content: center;
+    }
+
+    .nosotrosDesc{
+        margin: 0;
+        height: 200px;
+        width: 90%;
+    }
+
+    #cajaProductos{
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    #cardsBayer{
+        width: 15rem;
+        height: 450px;
+        margin-bottom: 10px;
+    }
+}
+
+/*responsive para tablets medianas*/
+@media (min-width: 820px) and (max-width: 1000px){
+    #seccionHeroe{
+        text-align: center;
+        padding: 20px;
+    }
+
+    #herorow{
+        justify-content: center;
+    }
+
+    .nosotrosDesc{
+        margin: 0;
+        height: 200px;
+        width: 90%;
+    }
+
+    #cajaProductos{
+        text-align: center;
+        margin-left: 80px;
+    }
+
+    #cardsBayer{
+        width: 15rem;
+        height: 450px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-item{
+        height: auto;
+    }
+}
+
+/* Responsive para Tablets grandes verticales, pequeñas y medianas horizontales*/
+@media (min-width: 1024px) and (max-width: 1365px){
+    #cajamarca{
+        display: flex;
+        justify-content: center;
+    }
+
+    #cartasLuxus img{
+        width: 210px;
+    }
+
+    .hoverImage{
+        width: 210px;
+    }
+
+    .subDolores{
+        font-size: 1.6rem;
+    }
+
+    #cardsBayer{
+        width: 14rem;
+        height: 450px;
+        margin-bottom: 10px;
+        margin-left: 50px;
     }
 }

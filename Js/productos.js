@@ -38,3 +38,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // Llamar la función una vez para activar elementos visibles al cargar
     handleScroll();
 });
+
+// Detectar cuando los elementos aparecen en pantalla
+const animarElementos = document.querySelectorAll('.animar');
+
+const observer = new IntersectionObserver((entradas) => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add('animado');
+      observer.unobserve(entrada.target); 
+    }
+  });
+}, {
+  threshold: 0.1 
+});
+
+animarElementos.forEach(el => observer.observe(el));

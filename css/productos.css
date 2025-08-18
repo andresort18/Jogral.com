@@ -83,18 +83,15 @@ header.visible {
 }
 
 .titulos h2{
-    font-size: 40px;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bolder;
+    font-size: 38px;
+    font-family: "GS Sans", Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
 .titulos h1{
     font-size: 50px;
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 5px;
-    
+    font-family: "GS Serif", Times, "Times New Roman", serif;;
+    font-weight: bold;
 }
 
 .iconoNegocios{
@@ -189,7 +186,10 @@ header.visible {
 }
 
 #infoBayer h2{
-    font-family: "Rubik Dirt", cursive;
+    font-size: 45px;
+    font-family: "GS Serif", Times, "Times New Roman", serif;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 #infoBayer p{
@@ -205,7 +205,7 @@ header.visible {
 .subDolores{
     color: whitesmoke;
     font-family: "Rubik Dirt", cursive;
-    margin-top: 5px;
+    margin-top: 12px;
 }
 
 #contenedorDoloresyProductosBayer{
@@ -307,8 +307,9 @@ header.visible {
 }
 
 .info h2{
-    font-size: 40px;
-    font-family: "Rubik Dirt", cursive;
+    font-size: 55px;
+    font-family: "GS Serif", Times, "Times New Roman", serif;
+    font-weight: bold;
     margin-bottom: 5px;
 }
 
@@ -504,6 +505,11 @@ footer{
     .titulos h2{
         margin-top: 0;
         font-size: 30px;
+    }
+
+    .titulos h1{
+        margin-top: 0;
+        font-size: 20px;
     }
 
     .titulos strong{

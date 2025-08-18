@@ -83,9 +83,7 @@ header.visible {
 }
 
 .info h1{
-  font-family: "Dosis", sans-serif;
-  font-size: 70px;
-  font-weight: 300;
+   font: 300 80px / 80px "GS Serif", Times, "Times New Roman", serif;
 }
 
 .info h2{
@@ -165,6 +163,7 @@ header.visible {
     padding-top: 40px;
     padding-bottom: 20px;
     background-color: #f8f9fa; 
+    
 }
 
 .maps{
@@ -190,6 +189,7 @@ header.visible {
     padding-top: 10px;
     padding-bottom: 40px;
     background-color: #f8f9fa; 
+
 }
 
 .map-tr {
@@ -432,7 +432,7 @@ footer{
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
     transition: all 0.3s ease;
-    animation: latido 8s infinite;
+    animation: latido 7s infinite;
 }
 
 .btn-wsp:hover{
